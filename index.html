@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="weather_header">
+        <form class="weather_search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search Your city..."
+            class="city-name"
+          />
+        </form>
+      </div>
+
+      <!-- Middle Part -->
+      <div class="weather_details">
+        <h1 class="weather_city " >
+          London,United Kingdom
+        </h1>
+        <p class="weather_date_time">Kukatpally,9/12/,at 10:37pm</p>
+        <div class="weather_data">
+          <p class="weather_forecast">clouds</p>
+          <p class="weather_icon">clouds</p>
+        </div>
+        <p class="weather_temperature">258</p>
+        <div class="weather_minmax">
+          <p class="weather_min weather_min_max">Min:15</p>
+          <p class="weather_max weather_min_max">Max:30</p>
+        </div>
+      </div>
+
+      <!-- Weather infor footer path -->
+      <section class="weather_info">
+        <div class="weather_card">
+          <i class="fa-solid fa-temperature-three-quarters"></i>
+          <div>
+            <p>feels like</p>
+            <p class="weather_feelslike">25&deg</p>
+          </div>
+        </div>
+
+        <div class="weather_card">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <p>Humidity</p>
+            <p class="weather_humidity">85%</p>
+          </div>
+        </div>
+
+        <div class="weather_card">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <p>wind</p>
+            <p class="weather_wind">3.58m/s</p>
+          </div>
+        </div>
+
+        <div class="weather_card">
+          <i class="fa-solid fa-gauge"></i>
+          <div>
+            <p>pressure</p>
+            <p class="weather_pressure">9857 hpa</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
